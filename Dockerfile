@@ -28,7 +28,7 @@ RUN rm -rf flux_0.4.0_linux_amd64.tar.gz
 RUN pip3 install coverage
 
 #aws-cli2
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
+RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip -o awscliv2.zip
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
